@@ -1,8 +1,11 @@
+import { ClickIcon } from "../components/Icons"
+
 const Main = () => {
     return(
-        <>
-            ## 여기에 메인 코드 입력
-        </>
+        <div>
+            <ClickIcon />
+            <div>왼쪽 목록에서 할 일을 선택해 주세요!</div>
+        </div>
     )
 }
 
