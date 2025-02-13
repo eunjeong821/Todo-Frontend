@@ -27,8 +27,8 @@ const MainLayout = () => {
     
     return (
         <div>
-            <div>제목: {todo.title}</div>
-            <div>내용: {todo.content}</div>
+            <div>{todo.title}</div>
+            <div>{todo.content}</div>
             <AddButton />
             {todo.done ? <TodoButton /> : <DoneButton />}
             <EditButton />
