@@ -21,7 +21,7 @@ const TodoButton = () => {
     }
 
     return(
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="bg-gray-400 text-white p-4 rounded-2xl gap-2 text-[24px]">
             <NoteMinusIcon />
             이 일을 미완료로 표기
         </button>

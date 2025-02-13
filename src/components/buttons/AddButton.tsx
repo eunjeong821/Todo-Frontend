@@ -9,7 +9,7 @@ const AddButton = () => {
     }
 
     return(
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="bg-gray-800 text-white p-4 rounded-2xl gap-2 text-[24px]">
             <NoteAddIcon />
             할 일 생성
         </button>

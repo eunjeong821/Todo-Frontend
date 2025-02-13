@@ -16,7 +16,7 @@ const DeleteButton = () => {
     }
 
     return(
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="bg-red-300 text-white p-4 rounded-2xl gap-2 text-[24px]">
             <NoteRemoveIcon />
             삭제
         </button>

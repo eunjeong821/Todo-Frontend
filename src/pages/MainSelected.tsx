@@ -26,13 +26,15 @@ const MainLayout = () => {
     }
     
     return (
-        <div>
-            <div>{todo.title}</div>
-            <div>{todo.content}</div>
-            <AddButton />
-            {todo.done ? <TodoButton /> : <DoneButton />}
-            <EditButton />
-            <DeleteButton />
+        <div className='flex flex-col p-4 gap-4'>
+            {todo.done ? <div className='text-[48px] p-2 line-through text-gray-400'>{todo.title}</div> : <div className='text-[48px] p-2 text-gray-800'>{todo.title}</div>}
+            <div className='h-[500px] text-[32px] p-2 text-gray-800'>{todo.content}</div>
+            <div className='flex gap-4'>
+                <AddButton />
+                {todo.done ? <TodoButton /> : <DoneButton />}
+                <EditButton />
+                <DeleteButton />
+            </div>
         </div>
     )
 }

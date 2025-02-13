@@ -35,21 +35,22 @@ const MainEdit = () => {
         setTitle(event.target.value)
     }
 
-    const handleContent = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleContent = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
         setContent(event.target.value)
     }
 
     return (
-        <div>
+        <div className='flex flex-col p-4 gap-4'>
             <input 
                 type="text" 
                 value={title}
                 onChange={handleTitle}
+                className='text-[48px] p-2 bg-white'
              />
-            <input 
-                type="text" 
+            <textarea 
                 value={content}
                 onChange={handleContent}
+                className='h-[500px] text-[32px] p-2 bg-white'
              />
             <SaveEditButton 
                 id = {prdId}

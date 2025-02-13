@@ -1,6 +1,4 @@
 import Logo from "../components/Logo";
-// import Todo from "../components/Todo";
-import Done from "../components/Done";
 import TodoWrapper from "../components/TodoWrapper"
 
 const Sidebar = () => {

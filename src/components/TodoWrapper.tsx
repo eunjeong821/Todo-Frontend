@@ -23,18 +23,31 @@ const TodoWrapper: React.FC<TodoWrapperProps> = ({ done }) => {
     const filteredTodos = todos.filter(todo => todo.done === done);
 
     return (
-        <div>
+        <div className='flex flex-col text-[24px] p-4 gap-4'>
             {done ? 
                 <div><CheckboxMarkedCircleIcon /> 한 일({filteredTodos.length}개)</div> :
                 <div><CheckboxBlankCircleIcon /> 할 일({filteredTodos.length}개)</div> 
             }
-            <ul>
-                {filteredTodos.map((todo) => (
-                    <li key={todo.id}>
-                        <Link to={`/${todo.id}`}>{todo.title}</Link>
-                    </li>
-                ))}
-            </ul>
+            {done?
+                <div className='line-through text-gray-400'> 
+                    <ul>
+                        {filteredTodos.map((todo) => (
+                            <li key={todo.id} className='p-2'>
+                                <Link to={`/${todo.id}`}>{todo.title}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div> :
+                <div> 
+                    <ul>
+                        {filteredTodos.map((todo) => (
+                            <li key={todo.id} className='p-2'>
+                                <Link to={`/${todo.id}`}>{todo.title}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            }
         </div>
     );
 };

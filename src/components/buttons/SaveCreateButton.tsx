@@ -24,7 +24,7 @@ const SaveCreateButton: React.FC<SaveCreateButtonProps> = ({ title, content }) =
     }
 
     return (
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="bg-green-500 text-white p-4 rounded-2xl gap-4 text-[24px] w-[114px]">
             <NoteCheckIcon />
             저장
         </button>

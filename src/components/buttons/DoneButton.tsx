@@ -21,7 +21,7 @@ const DoneButton = () => {
     }
 
     return(
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="bg-green-500 text-white p-4 rounded-2xl gap-2 text-[24px]">
             <NoteCheckIcon />
             이 일을 완료로 표기
         </button>

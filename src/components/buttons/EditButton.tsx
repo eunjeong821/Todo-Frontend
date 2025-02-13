@@ -11,7 +11,7 @@ const EditButton = () => {
     }
 
     return(
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="bg-blue-400 text-white p-4 rounded-2xl gap-2 text-[24px]">
             <NoteEditIcon />
             수정
         </button>
