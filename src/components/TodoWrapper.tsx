@@ -25,8 +25,8 @@ const TodoWrapper: React.FC<TodoWrapperProps> = ({ done }) => {
     return (
         <div>
             {done ? 
-                <div><CheckboxBlankCircleIcon /> 할 일({filteredTodos.length}개)</div> :
-                <div><CheckboxMarkedCircleIcon /> 한 일({filteredTodos.length}개)</div>
+                <div><CheckboxMarkedCircleIcon /> 한 일({filteredTodos.length}개)</div> :
+                <div><CheckboxBlankCircleIcon /> 할 일({filteredTodos.length}개)</div> 
             }
             <ul>
                 {filteredTodos.map((todo) => (
