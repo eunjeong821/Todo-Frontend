@@ -14,8 +14,8 @@ const App = () => {
           <Route path="/create" element={<MainCreate /> } />
           <Route path="/:id/edit" element={<MainEdit /> } />
       </Routes>
-  </Layout>
-)
+    </Layout>
+  )
 }
 
 export default App
